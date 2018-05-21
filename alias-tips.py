@@ -7,10 +7,12 @@ FORCE_EXIT_CODE = 10
 
 
 def format_tip(s, prefix):
-    color_blue_normal = '\033[94m'
-    color_blue_bold = '\033[1;94m'
+    # color_blue_normal = '\033[94m'
+    # color_blue_bold = '\033[1;94m'
+    color_light_purple_normal = '\033[;35m'
+    color_light_purple_bold = '\033[1;35m'
     color_reset = '\033[0m'
-    return color_blue_normal + prefix + color_blue_bold + s + color_reset
+    return color_light_purple_normal + prefix + color_light_purple_bold + s + color_reset
 
 
 def split(input):
